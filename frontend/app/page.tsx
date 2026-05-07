@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 type Phase = 'input' | 'loading' | 'response' | 'feedback' | 'locked';
 
@@ -18,7 +18,17 @@ export default function Home() {
   const [feedbackDone, setFeedbackDone] = useState(false);
   const [sessionCount, setSessionCount] = useState(0);
   const [blockMessage, setBlockMessage] = useState('');
+  const [userId, setUserId] = useState('');
   const inputRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    let id = localStorage.getItem('move_user_id');
+    if (!id) {
+      id = crypto.randomUUID();
+      localStorage.setItem('move_user_id', id);
+    }
+    setUserId(id);
+  }, []);
 
   async function handleSubmit() {
     if (!message.trim()) return;
@@ -29,7 +39,7 @@ export default function Home() {
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userId: 'user-1', message }),
+      body: JSON.stringify({ userId, message }),
     });
 
     const data = await res.json();
