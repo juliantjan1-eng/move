@@ -26,7 +26,7 @@ export default function Home() {
     setPhase('loading');
     setBlockMessage('');
 
-    const res = await fetch('http://localhost:3001/chat', {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ userId: 'user-1', message }),
@@ -47,7 +47,7 @@ export default function Home() {
 
   async function handleFeedback(helpful: boolean) {
     if (!response) return;
-    await fetch('http://localhost:3001/feedback', {
+    await fetch(`${process.env.NEXT_PUBLIC_API_URL}/feedback`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ interventionId: response.interventionId, helpful }),
