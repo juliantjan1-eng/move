@@ -2,7 +2,7 @@
 
 import { useState, useRef } from 'react';
 
-type Phase = 'input' | 'loading' | 'response' | 'feedback';
+type Phase = 'input' | 'loading' | 'response' | 'feedback' | 'locked';
 
 interface Response {
   acknowledgment: string;
@@ -10,30 +10,21 @@ interface Response {
   interventionId: string;
 }
 
-const BLOCK_MESSAGES = [
-  'Je hebt je actie. Ga het doen. De app kan wachten.',
-  'Je bent aan het uitstellen. Sluit de app.',
-  'Begrip helpt hier niet. De actie wel.',
-];
-
 export default function Home() {
   const [phase, setPhase] = useState<Phase>('input');
   const [message, setMessage] = useState('');
   const [response, setResponse] = useState<Response | null>(null);
   const [visibleLines, setVisibleLines] = useState(0);
-  const [blockAttempt, setBlockAttempt] = useState(0);
   const [feedbackDone, setFeedbackDone] = useState(false);
+  const [sessionCount, setSessionCount] = useState(0);
+  const [blockMessage, setBlockMessage] = useState('');
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   async function handleSubmit() {
     if (!message.trim()) return;
 
-    if (phase === 'response') {
-      setBlockAttempt((n) => Math.min(n + 1, BLOCK_MESSAGES.length - 1));
-      return;
-    }
-
     setPhase('loading');
+    setBlockMessage('');
 
     const res = await fetch('http://localhost:3001/chat', {
       method: 'POST',
@@ -44,7 +35,7 @@ export default function Home() {
     const data = await res.json();
     setResponse(data);
     setVisibleLines(0);
-    setBlockAttempt(0);
+    setSessionCount((n) => n + 1);
 
     setTimeout(() => {
       setPhase('response');
@@ -63,16 +54,28 @@ export default function Home() {
     });
     setFeedbackDone(true);
     setTimeout(() => {
-      setPhase('input');
-      setMessage('');
-      setResponse(null);
-      setVisibleLines(0);
-      setFeedbackDone(false);
+      if (sessionCount >= 2) {
+        setPhase('locked');
+      } else {
+        setPhase('input');
+        setMessage('');
+        setResponse(null);
+        setVisibleLines(0);
+        setFeedbackDone(false);
+      }
     }, 1500);
   }
 
   function handleCommit() {
     setPhase('feedback');
+  }
+
+  function handleBlockedInput() {
+    if (sessionCount >= 2) {
+      setBlockMessage('Je hebt je actie. Ga het nu doen.');
+    } else {
+      setBlockMessage('Begrip helpt hier niet. De actie wel.');
+    }
   }
 
   return (
@@ -113,11 +116,6 @@ export default function Home() {
 
       {phase === 'response' && response && (
         <div className="w-full max-w-sm flex flex-col gap-8">
-          {blockAttempt > 0 && (
-            <p className="text-sm text-[#888] italic text-center">
-              {BLOCK_MESSAGES[blockAttempt - 1]}
-            </p>
-          )}
           <div className="flex flex-col gap-6">
             <p className={`text-2xl font-medium text-[#1a1a1a] leading-snug transition-opacity duration-700 ${visibleLines >= 1 ? 'opacity-100' : 'opacity-0'}`}>
               {response.acknowledgment}
@@ -140,24 +138,19 @@ export default function Home() {
           )}
 
           {visibleLines >= 3 && (
-            <div className="w-full flex gap-2 items-center">
-              <textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSubmit(); } }}
-                placeholder="Typ hier..."
-                rows={2}
-                className="flex-1 bg-white border-0 rounded-2xl px-4 py-3 text-[#1a1a1a] placeholder-[#bbb] resize-none focus:outline-none text-sm shadow-sm opacity-40"
-              />
-              <button
-                onClick={handleSubmit}
-                className="bg-[#2d5a3d] text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 opacity-40 hover:opacity-100 transition-opacity"
-              >
+            <div
+              className="w-full flex gap-2 items-end cursor-not-allowed"
+              onClick={handleBlockedInput}
+            >
+              <div className="flex-1 bg-white rounded-2xl px-4 py-3 text-sm text-[#bbb] shadow-sm select-none min-h-[72px] flex items-start pointer-events-none">
+                {blockMessage || 'Typ hier...'}
+              </div>
+              <div className="bg-[#2d5a3d] text-white rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 opacity-30 pointer-events-none">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="12" y1="19" x2="12" y2="5" />
                   <polyline points="5 12 12 5 19 12" />
                 </svg>
-              </button>
+              </div>
             </div>
           )}
         </div>
@@ -190,6 +183,16 @@ export default function Home() {
           )}
         </div>
       )}
+
+      {phase === 'locked' && (
+        <div className="w-full max-w-sm flex flex-col items-center gap-6 text-center">
+          <p className="text-2xl font-medium text-[#1a1a1a]">Je bent klaar voor nu.</p>
+          <p className="text-base text-[#777] leading-relaxed">
+            Je hebt gedaan wat je kon. De rest is aan jou.<br />Kom terug als je het nodig hebt.
+          </p>
+        </div>
+      )}
+
     </main>
   );
 }
