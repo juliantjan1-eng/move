@@ -14,9 +14,7 @@ app.use(express.json());
 app.use('/chat', chatRoutes);
 app.use('/feedback', feedbackRoutes);
 
-app.get('/health', (req, res) => {
-  res.json({ status: 'ok' });
-});
+app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
 app.listen(PORT, () => {
   console.log(`MOVE backend running on port ${PORT}`);

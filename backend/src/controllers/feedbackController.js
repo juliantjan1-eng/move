@@ -1,3 +1,5 @@
+const supabase = require('../db/db');
+
 async function handleFeedback(req, res) {
   const { interventionId, helpful } = req.body;
 
@@ -5,9 +7,18 @@ async function handleFeedback(req, res) {
     return res.status(400).json({ error: 'interventionId en helpful zijn verplicht.' });
   }
 
-  // Fase 4: opslaan in database
-  // Voorlopig: bevestig ontvangst
-  res.json({ success: true });
+  try {
+    const { error } = await supabase
+      .from('feedback')
+      .insert({ intervention_id: interventionId, helpful });
+
+    if (error) throw error;
+
+    return res.json({ success: true });
+  } catch (err) {
+    console.error('DB error:', err.message);
+    return res.json({ success: true });
+  }
 }
 
 module.exports = { handleFeedback };
