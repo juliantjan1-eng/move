@@ -37,6 +37,8 @@ MOVE is geen plek om te blijven. Het is een tool om te bewegen.
 | [docs/architecture.md](docs/architecture.md) | Systeemarchitectuur |
 | [docs/database.md](docs/database.md) | Databasestructuur |
 | [docs/roadmap.md](docs/roadmap.md) | Bouwfases |
+| [docs/design.md](docs/design.md) | Visuele identiteit en interactieprincipes |
+| [docs/positioning.md](docs/positioning.md) | USP, doelgroep en vertrouwensstrategie |
 
 ## Stack
 
