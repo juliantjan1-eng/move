@@ -1,14 +1,32 @@
 # Interventies — MOVE
 
-## Principe
+## Responsstructuur
 
-Interventies zijn geen willekeurige acties. Elke interventie is ontworpen om een specifieke verschuiving te creëren — in het zenuwstelsel, de aandacht, het lichaam, of het gedrag.
+Elke respons van MOVE bestaat uit drie delen:
+
+```
+[1 zin] Erkenningszin — spreekt de onderliggende belief aan
+[1 zin] Interventie — de concrete actie
+[1 zin] Exit — richting buiten de app
+```
+
+Totale leestijd: onder de 10 seconden.
+Totale tijd in de app: onder de 60 seconden.
+
+**Voorbeeld:**
+> "Je hoofd zoekt zekerheid die er nu niet hoeft te zijn. Loop 10 minuten buiten. Sluit de app en ga nu."
+
+De erkenningszin maakt de interventie persoonlijk zonder analyse. Zie `psychology.md` voor alle beliefs en erkenningszinnen.
+
+---
+
+## Principe voor interventies
 
 Een interventie moet altijd:
 - Direct uitvoerbaar zijn (geen voorbereiding nodig)
 - Klein genoeg zijn om weerstand te omzeilen
 - De gebruiker uit de app sturen
-- Aansluiten op het onderliggende patroon
+- Aansluiten op het onderliggende patroon én de bijbehorende belief
 
 ---
 
@@ -97,7 +115,7 @@ Doel: de aandacht verplaatsen van gedachten naar de directe fysieke omgeving. Ac
 - Ga staan. Voel hoe je gewicht verdeeld is over je voeten.
 - Kijk uit het raam en beschrijf wat je ziet, in gedachten of hardop.
 
-**Werkt bij:** `overthinking`, `mental_loop`, `dissociation`, `anxiety`, `compulsive_checking`, `disconnection`, `physical_agitation`
+**Werkt bij:** `overthinking`, `mental_loop`, `anxiety`, `compulsive_checking`, `disconnection`, `physical_agitation`, `catastrophizing`
 
 ---
 
@@ -106,13 +124,13 @@ Doel: de aandacht verplaatsen van gedachten naar de directe fysieke omgeving. Ac
 Doel: het parasympatische zenuwstelsel direct activeren. Verlenging van de uitademing verlaagt hartslag en cortisol.
 
 **Acties:**
-- **Fysiologische zucht:** twee keer snel inademen door de neus, daarna lang uitblazen door de mond. 3 keer herhalen.
-- **Box breathing:** 4 tellen in, 4 vasthouden, 4 uit, 4 vasthouden. 4 rondes.
-- **Verlengde uitademing:** in 4 tellen, uit 8 tellen. 5 minuten.
-- **Neusgat ademhaling:** sluit rechter neusgat, in via links. Sluit links, uit via rechts. 5 rondes.
+- Fysiologische zucht: twee keer snel inademen door de neus, daarna lang uitblazen door de mond. 3 keer herhalen.
+- Box breathing: 4 tellen in, 4 vasthouden, 4 uit, 4 vasthouden. 4 rondes.
+- Verlengde uitademing: in 4 tellen, uit 8 tellen. 5 minuten.
+- Neusgat ademhaling: sluit rechter neusgat, in via links. Sluit links, uit via rechts. 5 rondes.
 - Adem in en span al je spieren tegelijk aan. Houd 5 seconden. Laat los bij uitademing.
 
-**Werkt bij:** `anxiety`, `overwhelm`, `panic`, `anger_buildup`, `tension`, `physical_agitation`, `emotional_block`
+**Werkt bij:** `anxiety`, `overwhelm`, `anger_buildup`, `tension`, `physical_agitation`, `emotional_block`, `future_worry`
 
 ---
 
@@ -159,7 +177,7 @@ Doel: de cognitieve belasting van een open beslissing direct afkappen.
 - Gooi een munt op. Volg de uitkomst.
 - Stel jezelf één vraag: "Wat zou ik doen als ik niet bang was?" Doe dat.
 - Neem een tijdelijke beslissing. Het hoeft niet voor altijd te kloppen.
-- Zet een timer op 2 minuten. Kies voor die timer afgaat.
+- Zet een timer op 2 minuten. Kies voor de timer afgaat.
 
 **Werkt bij:** `analysis_paralysis`, `overthinking`, `reassurance_seeking`, `perfectionism`, `future_worry`
 
@@ -200,7 +218,7 @@ Doel: opgekropte spanning, boosheid of energie direct uit het lichaam krijgen.
 
 ### WRITE — Gericht schrijven
 
-Doel: gedachten uit het hoofd halen en in een structuur plaatsen zodat ze minder macht hebben. Geen analyse — output.
+Doel: gedachten uit het hoofd halen en in een structuur plaatsen zodat ze minder macht hebben.
 
 **Acties:**
 - Schrijf 5 minuten alles op wat in je hoofd zit. Stop daarna. Lees het niet terug.
@@ -215,12 +233,12 @@ Doel: gedachten uit het hoofd halen en in een structuur plaatsen zodat ze minder
 
 ### CONNECT — Sociale verbinding
 
-Doel: het zenuwstelsel kalmeren via menselijk contact. Co-regulatie — een ander kalm zenuwstelsel beïnvloedt het jouwe.
+Doel: het zenuwstelsel kalmeren via menselijk contact. Co-regulatie.
 
 **Acties:**
 - Bel iemand. Niet om het op te lossen. Gewoon om te horen.
 - Stuur een bericht aan iemand: "Ik denk aan je."
-- Ga naar een plek waar mensen zijn. Cafetaria, straat, park.
+- Ga naar een plek waar mensen zijn.
 - Knuffel iemand of een dier als dat mogelijk is.
 - Zit even bij iemand zonder iets te zeggen.
 
@@ -245,11 +263,11 @@ Doel: toestemming geven om niet te presteren. Actieve rust als tegengif voor chr
 
 ### SHIFT — Omgeving of context veranderen
 
-Doel: het brein uit de associatieve staat halen door een nieuwe omgeving te introduceren. Nieuwe input doorbreekt de loop.
+Doel: het brein uit de associatieve staat halen door een nieuwe omgeving te introduceren.
 
 **Acties:**
 - Ga naar een andere kamer of ga naar buiten.
-- Verander je werkplek — ga naar een café, bibliotheek, bank buiten.
+- Verander je werkplek — café, bibliotheek, bank buiten.
 - Zet alle lichten aan of open alle ramen.
 - Ruim je bureau of de ruimte om je heen op.
 - Ga op een plek zitten waar je normaal nooit zit.
@@ -260,7 +278,7 @@ Doel: het brein uit de associatieve staat halen door een nieuwe omgeving te intr
 
 ### WITNESS — Observeren zonder oordeel
 
-Doel: afstand nemen van de gedachte of het gevoel. Jezelf als waarnemer zien in plaats van als deelnemer aan de stroom.
+Doel: afstand nemen van de gedachte of het gevoel. Jezelf als waarnemer zien in plaats van als deelnemer.
 
 **Acties:**
 - Zeg tegen jezelf: "Ik heb een gedachte dat ___." (Niet: "Ik denk dat ___.")
@@ -269,13 +287,13 @@ Doel: afstand nemen van de gedachte of het gevoel. Jezelf als waarnemer zien in 
 - Schrijf de gedachte op als een observatie: "Er is een gevoel van ___."
 - Zit 3 minuten stil en observeer je gedachten alsof je naar een film kijkt.
 
-**Werkt bij:** `shame_spiral`, `self_criticism`, `mental_loop`, `rumination`, `identity_confusion`, `catastrophizing`
+**Werkt bij:** `shame_spiral`, `mental_loop`, `rumination`, `identity_confusion`, `catastrophizing`, `guilt`, `people_pleasing`
 
 ---
 
 ### MEANING — Verbinding met richting herstellen
 
-Doel: de verbinding met iets groters dan de huidige toestand herstellen. Niet als therapie — als oriëntatiepunt.
+Doel: de verbinding met iets groters dan de huidige toestand herstellen.
 
 **Acties:**
 - Schrijf één zin: "Dit doet ertoe voor mij omdat ___."
@@ -288,53 +306,47 @@ Doel: de verbinding met iets groters dan de huidige toestand herstellen. Niet al
 
 ---
 
-## Standaard mapping patroon → interventie
+## Volledige mapping: patroon → belief → interventie
 
-| Patroon | Primaire interventie | Alternatief 1 | Alternatief 2 |
-|---------|---------------------|---------------|---------------|
-| `overthinking` | GROUND | MOVE | WRITE |
-| `rumination` | WRITE | WITNESS | MOVE |
-| `analysis_paralysis` | DECIDE | START | GROUND |
-| `catastrophizing` | WITNESS | BREATHE | GROUND |
-| `perfectionism` | START | DECIDE | REST |
-| `reassurance_seeking` | GROUND | WITNESS | DECIDE |
-| `mental_loop` | GROUND | SHIFT | WRITE |
-| `future_worry` | BREATHE | WITNESS | DECIDE |
-| `overwhelm` | BREATHE | GROUND | REST |
-| `emotional_numbness` | FEEL | MOVE | CONNECT |
-| `emotional_block` | FEEL | BREATHE | MOVE |
-| `shame_spiral` | WITNESS | FEEL | CONNECT |
-| `guilt` | WRITE | FEEL | WITNESS |
-| `grief` | FEEL | CONNECT | MOVE |
-| `anger_buildup` | RELEASE | MOVE | BREATHE |
-| `anxiety` | BREATHE | GROUND | MOVE |
-| `loneliness` | CONNECT | FEEL | MOVE |
-| `sadness` | FEEL | MOVE | CONNECT |
-| `avoidance` | START | SHIFT | MOVE |
-| `procrastination` | START | DECIDE | SHIFT |
-| `compulsive_checking` | GROUND | BREATHE | SHIFT |
-| `freeze` | MOVE | START | BREATHE |
-| `people_pleasing` | WITNESS | DECIDE | WRITE |
-| `withdrawal` | CONNECT | MOVE | SHIFT |
-| `impulsivity` | BREATHE | WITNESS | GROUND |
-| `busyness_as_avoidance` | REST | FEEL | BREATHE |
-| `tension` | BREATHE | RELEASE | MOVE |
-| `restlessness` | MOVE | GROUND | BREATHE |
-| `fatigue` | REST | BREATHE | SHIFT |
-| `disconnection` | GROUND | FEEL | MOVE |
-| `physical_agitation` | RELEASE | MOVE | BREATHE |
-| `lost` | MEANING | WRITE | SHIFT |
-| `meaninglessness` | MEANING | CONNECT | MOVE |
-| `identity_confusion` | WITNESS | WRITE | MEANING |
+| Patroon | Primaire belief | Primaire interventie | Alternatief 1 | Alternatief 2 |
+|---------|----------------|---------------------|---------------|---------------|
+| `overthinking` | `uncertainty_is_danger` | GROUND | MOVE | WRITE |
+| `rumination` | `should_have_known` | WRITE | WITNESS | MOVE |
+| `analysis_paralysis` | `must_be_certain` | DECIDE | START | GROUND |
+| `catastrophizing` | `world_is_unsafe` | WITNESS | BREATHE | GROUND |
+| `perfectionism` | `not_enough` | START | DECIDE | REST |
+| `reassurance_seeking` | `cant_trust_self` | GROUND | WITNESS | DECIDE |
+| `mental_loop` | `must_control` | GROUND | SHIFT | WRITE |
+| `future_worry` | `world_is_unsafe` | BREATHE | WITNESS | DECIDE |
+| `overwhelm` | `not_capable` | BREATHE | GROUND | REST |
+| `emotional_numbness` | `emotions_are_dangerous` | FEEL | MOVE | CONNECT |
+| `emotional_block` | `emotions_are_too_much` | FEEL | BREATHE | MOVE |
+| `shame_spiral` | `fundamentally_flawed` | WITNESS | FEEL | CONNECT |
+| `guilt` | `responsible_for_all` | WRITE | FEEL | WITNESS |
+| `grief` | `will_be_abandoned` | FEEL | CONNECT | MOVE |
+| `anger_buildup` | `helpless` | RELEASE | MOVE | BREATHE |
+| `anxiety` | `world_is_unsafe` | BREATHE | GROUND | MOVE |
+| `loneliness` | `dont_belong` | CONNECT | FEEL | MOVE |
+| `sadness` | `things_wont_improve` | FEEL | MOVE | CONNECT |
+| `avoidance` | `will_fail` | START | SHIFT | MOVE |
+| `procrastination` | `must_be_certain` | START | DECIDE | SHIFT |
+| `compulsive_checking` | `must_control` | GROUND | BREATHE | SHIFT |
+| `freeze` | `helpless` | MOVE | START | BREATHE |
+| `people_pleasing` | `conditional_love` | WITNESS | DECIDE | WRITE |
+| `withdrawal` | `if_known_rejected` | CONNECT | MOVE | SHIFT |
+| `impulsivity` | `emotions_are_dangerous` | BREATHE | WITNESS | GROUND |
+| `busyness_as_avoidance` | `emotions_are_dangerous` | REST | FEEL | BREATHE |
+| `tension` | `must_be_alert` | BREATHE | RELEASE | MOVE |
+| `restlessness` | `must_control` | MOVE | GROUND | BREATHE |
+| `fatigue` | `must_earn_worth` | REST | BREATHE | SHIFT |
+| `disconnection` | `emotions_are_dangerous` | GROUND | FEEL | MOVE |
+| `physical_agitation` | `world_is_unsafe` | RELEASE | MOVE | BREATHE |
+| `lost` | `this_is_who_i_am` | MEANING | WRITE | SHIFT |
+| `meaninglessness` | `dont_deserve_better` | MEANING | CONNECT | MOVE |
+| `identity_confusion` | `must_adapt` | WITNESS | WRITE | MEANING |
 
 ---
 
 ## Adaptatie over tijd
 
-Na voldoende feedback-data kiest het systeem niet meer op basis van de standaardmapping, maar op basis van wat eerder werkte voor deze gebruiker bij dit patroon.
-
-Voorbeeld:
-- `overthinking` + gebruiker A → MOVE heeft 80% succesrate → systeem kiest MOVE
-- `overthinking` + gebruiker B → WRITE heeft 75% succesrate → systeem kiest WRITE
-
-De standaardmapping is het startpunt. Feedback is het leerproces.
+De standaardmapping is het startpunt. Na voldoende feedback kiest het systeem op basis van wat eerder werkte voor deze gebruiker bij dit patroon — niet op basis van de standaard.

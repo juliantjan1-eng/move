@@ -15,15 +15,19 @@ De meeste apps maken dit erger:
 - Ze vragen om meer uitleg en analyse
 - Ze houden de gebruiker binnen de app
 
-## De kern
+## De drie lagen
 
-Wanneer iemand vastloopt, is er altijd een gevoel aan de basis. Het patroon is de automatische reactie op dat gevoel — een aangeleerde manier om het niet volledig te hoeven voelen.
+Elk moment waarop iemand vastloopt heeft drie lagen:
 
-MOVE grijpt in op het patroon, niet op het gevoel zelf. Het onderbreekt de automatische reactie en geeft een alternatief gedrag dat:
+```
+Laag 1 — Patroon       zichtbaar gedrag: overthinking, checken, freeze...
+Laag 2 — Gevoel        de emotionele respons: angst, schaamte, verdriet...
+Laag 3 — Core belief   de overtuiging eronder: "ik ben niet goed genoeg"...
+```
 
-- het zenuwstelsel reguleert
-- contact maakt met het heden
-- de loop doorbreekt
+Het patroon is de beschermingslaag. Het gevoel is wat het patroon probeert te managen. De belief is wat het gevoel in stand houdt.
+
+MOVE werkt op laag 1 — maar de respons erkent laag 3. Niet analyseren. Erkennen. Daarna meteen naar actie.
 
 ## De flow
 
@@ -34,9 +38,12 @@ Opent MOVE
         ↓
 Typt kort wat er speelt
         ↓
-Systeem herkent patroon
+Systeem herkent patroon + onderliggende belief
         ↓
-Geeft één interventie
+Geeft respons in drie delen:
+  1. Erkenningszin (spreekt belief aan, 1 zin)
+  2. Interventie (concrete actie, 1 zin)
+  3. Exit (verlaat de app, 1 zin)
         ↓
 Gebruiker verlaat app en voert het uit
         ↓
@@ -45,16 +52,26 @@ Geeft later feedback (ja/nee)
 Systeem leert wat werkt
 ```
 
+## Responsstructuur
+
+Elke respons van MOVE bestaat uit exact drie zinnen:
+
+| Deel | Functie | Voorbeeld |
+|------|---------|-----------|
+| Erkenningszin | Spreekt de onderliggende belief aan zonder analyse | "Je hoofd zoekt zekerheid die er nu niet hoeft te zijn." |
+| Interventie | De concrete actie | "Loop 10 minuten buiten." |
+| Exit | Richting buiten de app | "Sluit de app en ga nu." |
+
 ## Ontwerpprincipes
 
 **1. Snelheid boven volledigheid**
 De interactie duurt maximaal 30–60 seconden. Alles wat langer duurt, is een ontwerpfout.
 
-**2. Actie boven begrip**
-De gebruiker hoeft niet te begrijpen waarom een interventie werkt. Hij hoeft het alleen te doen.
+**2. Erkenning boven analyse**
+De belief wordt erkend — niet uitgelegd. Één zin. Geen therapiegesprek.
 
-**3. Gevoel boven verhaal**
-Het systeem erkent het gevoel. Het gaat niet in op het verhaal eromheen.
+**3. Actie boven begrip**
+De gebruiker hoeft niet te begrijpen waarom een interventie werkt. Hij hoeft het alleen te doen.
 
 **4. Exit als succes**
 Een sessie is geslaagd als de gebruiker de app verlaat en de interventie uitvoert.

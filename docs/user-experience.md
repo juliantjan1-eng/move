@@ -4,6 +4,8 @@
 
 Een sessie in MOVE duurt maximaal 30–60 seconden. Als een gebruiker langer in de app zit, is er een ontwerpfout.
 
+---
+
 ## Scherm 1 — Startscherm
 
 Minimaal. Geen dashboard, geen geschiedenis, geen statistieken.
@@ -15,6 +17,8 @@ Alleen:
 - Een verzendknop
 
 De interface straalt rust en directheid uit. Geen afleidingen.
+
+---
 
 ## Scherm 2 — Input
 
@@ -29,25 +33,32 @@ Voorbeelden van wat een gebruiker typt:
 
 De input hoeft niet volledig of goed geformuleerd te zijn. Het systeem werkt met signalen, niet met perfecte omschrijvingen.
 
+---
+
 ## Scherm 3 — Respons
 
-Het systeem toont één respons. Drie elementen:
+Het systeem toont één respons. Drie zinnen:
 
-1. **Korte erkenning** (max 1 zin)
-2. **Één interventie**
-3. **Exit-richting**
+**Deel 1 — Erkenningszin**
+Spreekt kort de onderliggende belief aan. Creëert herkenning zonder analyse. De gebruiker voelt zich gezien zonder dat er een gesprek over gevoerd wordt.
 
-Voorbeeld:
+**Deel 2 — Interventie**
+Één concrete, direct uitvoerbare actie.
 
-> "Je zit vast in denken. Loop 10 minuten zonder telefoon. Sluit de app en ga nu."
+**Deel 3 — Exit**
+Directe aanwijzing om de app te verlaten.
 
-De tekst is groot en leesbaar. Geen andere elementen op dit scherm behalve de respons en één knop:
+**Voorbeeld:**
+> "Je hoofd zoekt zekerheid die er nu niet hoeft te zijn. Loop 10 minuten buiten. Sluit de app en ga nu."
+
+De tekst is groot en leesbaar. Naast de respons staat één knop:
 
 **"Ik ga dit doen"**
 
 Als de gebruiker nog een bericht probeert te sturen:
-
 > "Je hebt je actie. Ga het doen. De app kan wachten."
+
+---
 
 ## Scherm 4 — Feedback (later)
 
@@ -58,10 +69,11 @@ Wanneer de gebruiker terugkomt, toont de app één vraag:
 Twee knoppen: **Ja** / **Nee**
 
 Geen tekstveld. Geen uitleg gevraagd. Na de klik:
-
 > "Goed. Kom terug als je het nodig hebt."
 
 De app gaat terug naar het startscherm.
+
+---
 
 ## Gedragsregels van het systeem
 
@@ -71,6 +83,9 @@ De app gaat terug naar het startscherm.
 | Gebruiker vraagt om uitleg | "Begrip helpt hier niet. De actie wel." |
 | Gebruiker zegt dat de actie niet past | Geeft één alternatief, daarna exit |
 | Gebruiker blijft typen | "Je bent aan het uitstellen. Sluit de app." |
+| Gebruiker vraagt waarom deze interventie | "Dat hoef je niet te weten. Doe het." |
+
+---
 
 ## Tone of Voice
 
@@ -79,19 +94,32 @@ De app klinkt als een kalme, directe coach.
 - Niet therapeutisch
 - Niet motivationeel
 - Niet robotisch
-- Niet empathisch overdreven
+- Niet overdreven empathisch
 
-Voorbeeldzinnen:
-- "Je zit in het patroon. Hier is de uitgang."
-- "Je hoeft er niet uit te denken. Beweeg."
-- "Eén actie. Geen uitleg nodig."
-- "Ga dit doen. De rest kan wachten."
+De erkenningszin is menselijk en zacht. De interventie en exit zijn direct en helder.
+
+**Voorbeeldresponsen per patroontype:**
+
+Overthinking:
+> "Je hoofd zoekt zekerheid die er nu niet hoeft te zijn. Loop 10 minuten buiten. Sluit de app en ga nu."
+
+Schaamte:
+> "Er is een stemmetje dat zegt dat jij het probleem bent. Dat is een gedachte, geen feit. Leg je hand op je borst en adem 5 keer diep. Sluit de app."
+
+Freeze:
+> "Het voelt alsof je geen kant op kunt. Sta op en schud je lichaam 2 minuten los. Sluit de app en doe dit nu."
+
+Perfectionisme:
+> "Je waarde voelt afhankelijk van hoe goed dit wordt. Dat hoeft het niet te zijn. Open het document en schrijf één zin. Sluit daarna de app."
+
+---
 
 ## Wat de gebruiker nooit ziet
 
 - Welk patroon het systeem heeft gedetecteerd
+- Welke belief actief was
 - Waarom deze interventie gekozen is
 - Statistieken of grafieken (in v1)
 - Geschiedenis van sessies (in v1)
 
-De ervaring blijft altijd: **input → instructie → exit.**
+De ervaring blijft altijd: **input → drie zinnen → exit.**
